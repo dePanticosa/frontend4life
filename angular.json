@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "yaroslavaFun": {
+    "Frontend4Life": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/yaroslavaFun",
+            "outputPath": "dist/Frontend4Life",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "yaroslavaFun:build"
+            "browserTarget": "Frontend4Life:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "yaroslavaFun:build:production"
+              "browserTarget": "Frontend4Life:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "yaroslavaFun:build"
+            "browserTarget": "Frontend4Life:build"
           }
         },
         "test": {
@@ -112,5 +112,5 @@
       }
     }
   },
-  "defaultProject": "yaroslavaFun"
+  "defaultProject": "Frontend4Life"
 }
