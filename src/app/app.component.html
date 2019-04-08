@@ -1,13 +1,13 @@
 <div class="screen">
     <div class="title">
-
+        <p class="">Frontend 4 Life</p>
     </div>
     <div class="terminal">
         <div class="outputContainer">
-            <div class="output">
-                <div *ngFor="let message of messages | async">
+            <div class="output" *ngFor="let message of messages | async">
+                <p>
                     {{ message.message }}
-                </div>
+                </p>
             </div>
         </div>
         <div class="currentLine">
