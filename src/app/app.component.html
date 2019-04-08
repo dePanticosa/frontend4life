@@ -1,0 +1,20 @@
+<div class="screen">
+    <div class="title">
+
+    </div>
+    <div class="terminal">
+        <div class="outputContainer">
+            <div class="output">
+                <div *ngFor="let message of messages | async">
+                    {{ message.message }}
+                </div>
+            </div>
+        </div>
+        <div class="currentLine">
+            <span class="prompt"> > </span>
+            <div class="inputContainer">
+                <input class="input" type="text" [(ngModel)]="message" (keyup.enter)="send()" autofocus>
+            </div>
+        </div>
+    </div>
+</div>
