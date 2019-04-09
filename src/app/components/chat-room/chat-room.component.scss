@@ -1,0 +1,54 @@
+.terminal {
+  margin: 10px;
+
+  .message-block {
+    p {
+      width: 100%;
+      white-space: nowrap;
+      font-family: 'TrueType';
+      font-size: 15px;
+      color: #00fe00;
+      animation: typing 4s steps(60, end);
+      overflow: hidden
+
+    }
+    .right {
+      text-align: right;
+    }
+    .left {
+      text-align: left;
+    }
+
+    p:nth-child(2) {
+      animation: typing-two 6s steps(60, end);;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end
+  }
+  .left {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing-two {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+

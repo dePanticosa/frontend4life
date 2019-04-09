@@ -1,20 +1,12 @@
-<div class="screen">
-    <div class="title">
-        <p class="">Frontend 4 Life</p>
-    </div>
-    <div class="terminal">
-        <div class="outputContainer">
-            <div class="output" *ngFor="let message of messages | async">
-                <p>
-                    {{ message.message }}
-                </p>
-            </div>
-        </div>
-        <div class="currentLine">
-            <span class="prompt"> > </span>
-            <div class="inputContainer">
-                <input class="input" type="text" [(ngModel)]="message" (keyup.enter)="send()" autofocus>
-            </div>
-        </div>
-    </div>
+<header class="header">
+    <h1 class="">Frontend 4 Life</h1>
+</header>
+<router-outlet></router-outlet>
+<footer class="footer">
+    <label for="command-line" class="prompt"> > </label>
+    <input class="input" id="command-line" [type]="state === 'pass' ? 'password' : state === 'conf' ? 'password' : state === 'conf2' ? 'password' : 'text'" [(ngModel)]="text" (keyup.enter)="send()" rows="auto" autofocus>
+</footer>
+<div id="faux-terminal">
+    <div class="overlay"></div>
 </div>
+

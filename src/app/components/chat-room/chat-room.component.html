@@ -1,0 +1,6 @@
+<div class="terminal">
+    <div class="message-block" [ngClass]="{'left' : message.sender.name !== user.name, 'right' : message.sender.name === user.name}"  *ngFor="let message of messages">
+        <p [ngClass]="{'left' : message.sender.name !== user.name, 'right' : message.sender.name === user.name}">{{ message.message }}, {{message.sender.name | uppercase}}</p>
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+.output {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  p {
+    width: 100%;
+    white-space: nowrap;
+    font-family: 'TrueType';
+    font-size: 15px;
+    color: #00fe00;
+    animation: typing 4s steps(60, end);
+    overflow: hidden;
+  }
+  p:nth-child(2) {
+    animation: typing-two 6s steps(60, end);;
+  }
+}
